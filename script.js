@@ -26,7 +26,7 @@ const getBooks = () => {
         const container = document.querySelector(".container")
         const arrayOfBooks = data.map(({title, category, img}) => {
           return `
-            <div class="col-3">
+            <div class="col-sm-3 d-flex pb-2">
                     <div class="card">
                        <img src="${img}" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -67,7 +67,7 @@ const getBooks = () => {
   
 
 
-  
+
 // const getBooks = () => {
 //     fetch("https://striveschool-api.herokuapp.com/books)
 //       .then((res) => res.json())
